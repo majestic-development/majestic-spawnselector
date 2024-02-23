@@ -1,4 +1,4 @@
-# 💀 majestic-deathscreen
+# 💀 majestic-spawnselector
 FiveM QBCore NoPixel 4.0 inspired Spawn Selector
 
 ## 👀 Preview
