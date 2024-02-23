@@ -1,0 +1,14 @@
+Hello everyone, enjoy this free NoPixel 4.0 inspired spawn selector
+
+- Step 1 | Open qb-apartments config.lua
+
+When you open config file you will see apartments inside of Apartments.Locations table. And when you look inside of it you will see name, label, coords and more we will edit
+coords to make spawn selector compatible with apartments system. First click on coords - enter and create a new line and add this: 
+Code: x = 0, y = 0
+After you add code it should look like this:
+coords = {
+     enter = vector4(-667.02, -1105.24, 14.63, 242.32),
+     x = 0,
+     y = 0
+},
+If your code is like this it means you did everything right. So now just edit x and y to adjust marker in the screen. X means left, Y means top.

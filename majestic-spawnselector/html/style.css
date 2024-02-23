@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: FontsFree-Net-DINPro-1;
+    src: url(fonts/FontsFree-Net-DINPro-1.ttf);
+}
+
+body {
+    display: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    background-image: url(files/map.png);
+    font-family: FontsFree-Net-DINPro-1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 9%;
+}
+
+::-webkit-scrollbar {
+	width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: transparent;
+    border-radius: 1px;
+}
+
+#MDTop {
+    width: 100%;
+    height: 15%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* background-color: red; */
+}
+
+#MDTLine {
+    width: 100%;
+    height: 0.3%;
+    position: absolute;
+    top: 11%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.00) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.00) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.00) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.00) 50%) top right / 50% 50% no-repeat;
+}
+
+#MDTLine2 {
+    width: 12%;
+    height: 0.3%;
+    position: absolute;
+    top: 11%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #00dfbd;
+    box-shadow: #00dfbe00 0px 54px 55px, #00dfbe67 0px -12px 30px, #00dfbe44 0px 4px 6px, #00dfbe5e 0px 12px 13px, #00dfbe54 0px -3px 5px;
+    border-radius: 4px;
+}
+
+#MDBottomLeft {
+    width: 25%;
+    height: 16%;
+    position: absolute;
+    bottom: 4%;
+    left: 2.5%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: red; */
+    gap: 5px;
+}
+
+#MDBLInside {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.153);
+    background: rgba(255, 255, 255, 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 1px 17px;
+    padding-left: 14px;
+}
+
+.MDBLDiv {
+    width: 30%;
+    height: 45%;
+    position: relative;
+    /* background-color: red; */
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#MDMarkerDiv {
+    width: 15%;
+    height: 7%;
+    position: absolute;
+    /* left: 45%;
+    top: 38%; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    gap: 10px;
+    z-index: calc();
+    /* background-color: red; */
+}
+
+.MDMDLeftSide {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* background-color: blue; */
+}
+
+.MDMDLeftSide:hover .MDMDLDDiv1 {
+    transition: 0.5s;
+    cursor: pointer;
+    background: linear-gradient(134deg, rgba(1, 169, 143, 0.31) 14%, rgba(0, 0, 0, 0.00) 100.14%);
+}
+
+.MDMDLeftSide:hover .MDMDLDDiv2 {
+    transition: 0.5s;
+    cursor: pointer;
+    background: linear-gradient(124deg, #01A98F 14.38%, #5BB4A7 34.32%, #5CA197 50.36%, #45AA9B 63.65%, #26A896 99.97%);
+    box-shadow: 0px 4px 4px 0px rgba(1, 169, 143, 0.25);
+    color: white;
+}
+
+.MDMDLeftSide:hover .MDMDLDDiv3 {
+    transition: 0.5s;
+    cursor: pointer;
+    background: linear-gradient(134deg, rgba(1, 169, 143, 0.31) 14%, rgba(0, 0, 0, 0.00) 100.14%);
+}
+
+.MDMDLDDiv1 {
+    width: 45px;
+    height: 43px;
+    position: absolute;
+    left: 15%;
+    transform: rotate(-45deg);
+    border-radius: 3px;
+    background: linear-gradient(134deg, rgba(255, 255, 255, 0.25) 14%, rgba(0, 0, 0, 0.00) 100.14%);
+}
+
+.MDMDLDDiv2 {
+    width: 45px;
+    height: 43px;
+    position: absolute;
+    left: 15%;
+    right: 0;
+    margin: auto;
+    transform: rotate(135deg);
+    border-radius: 3px;
+    background: linear-gradient(134deg, #FFF 14%, #B0B0B0 34.06%, #B0B0B0 50.21%, #B0B0B0 63.59%, #FFF 100.14%);
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.MDMDLDDiv3 {
+    width: 45px;
+    height: 43px;
+    position: absolute;
+    right: 0;
+    transform: rotate(135deg);
+    border-radius: 3px;
+    background: linear-gradient(134deg, rgba(255, 255, 255, 0.25) 14%, rgba(0, 0, 0, 0.00) 100.14%);
+}
+
+.MDMDRightSide {
+    width: 65%;
+    /* width: fit-content;
+    padding-left: 35px;
+    padding-right: 70px; */
+    height: 60%;
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    clip-path: polygon(75% 0%, 84% 50%, 75% 100%, 0% 100%, 10% 49%, 0% 0%);
+    border-radius: 3px;
+    background: linear-gradient(124deg, #01a990b9 14.38%, #5bb4a7b0 34.32%, #5ca197b9 50.36%, #45aa9bb9 63.65%, #26a897a2 99.97%);
+    box-shadow: 0px 4px 4px 0px rgba(1, 169, 143, 0.25);
+}
+
+#MDBottomCenter {
+    width: 25%; 
+    height: 15%;
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+    /* background-color: red; */
+}
+
+#MDBCRadial {
+    width: 15%;
+    height: 45%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(134deg, #FFF 14%, #B0B0B0 34.06%, #B0B0B0 50.21%, #B0B0B0 63.59%, #FFF 100.14%);
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.15);
+    color: black;
+    position: relative;
+}
+
+#MDBCRadial:hover {
+    cursor: pointer;
+    background: linear-gradient(124deg, #01A98F 14.38%, #5BB4A7 34.32%, #5CA197 50.36%, #45AA9B 63.65%, #26A896 99.97%);
+    box-shadow: 0px 4px 4px 0px rgba(1, 169, 143, 0.25);
+}
+
+#MDBottomCenterH4 {
+    color: #FFF;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+}
+
+#MDBottomCenterH4:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    border-bottom: 2px solid #00dfbd;
+}
