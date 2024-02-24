@@ -2,7 +2,7 @@
 FiveM QBCore NoPixel 4.0 inspired Spawn Selector
 
 ## 👀 Preview
-![Uploading image.png…]()
+![image](https://github.com/majestic-development/majestic-spawnselector/assets/154363410/2fca777c-58b1-4c57-83e7-24556bbbe585)
 
 
 
