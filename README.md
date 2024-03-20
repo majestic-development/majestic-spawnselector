@@ -1,5 +1,5 @@
 # 💀 majestic-spawnselector
-FiveM QBCore NoPixel 4.0 inspired Spawn Selector
+FiveM QBCore & ESX NoPixel 4.0 inspired Spawn Selector
 
 ## 👀 Preview
 https://www.youtube.com/watch?v=J3d1H4_kEEc
